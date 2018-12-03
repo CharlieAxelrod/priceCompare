@@ -1,6 +1,6 @@
 import React from 'react';
 import 'babel-polyfill';
-import queryProduct from '../../../server/mlQueries';
+import queryBR from '../../../server/mlQueries';
 
 class App extends React.Component {
   constructor(props) {
@@ -12,19 +12,20 @@ class App extends React.Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.queryML = this.queryML.bind(this);
+  }
+
+  async queryML() {
+    const data = await queryBR(this.state.value);
+    this.setState({
+      search: data[0].price,
+      value: '',
+    });
   }
 
   handleSubmit(event) {
     event.preventDefault();
-    const queryML = async () => {
-      const data = await queryProduct(this.state.value);
-      this.setState({
-        search: data,
-        value: '',
-      });
-    };
-
-    queryML();
+    this.queryML();
   }
 
   handleChange({ target: { value } }) {

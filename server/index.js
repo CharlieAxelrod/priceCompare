@@ -5,7 +5,7 @@ const app = express();
 
 const PORT = 3000;
 
-app.use('/', express.static(path.join(__dirname, '/../client/dist')));
+app.use(express.static(path.join(__dirname, '/../client/dist')));
 
 app.listen(PORT, () => {
   console.log(`listening on port ${PORT}`);
