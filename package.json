@@ -5,7 +5,7 @@
   "main": ".eslintrc.js",
   "scripts": {
     "build": "webpack -d --watch",
-    "server": "nodemon server/index.js"
+    "start": "nodemon server/index.js"
   },
   "author": "",
   "license": "ISC",
@@ -20,7 +20,8 @@
     "express": "^4.16.4",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
-    "request": "^2.88.0"
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",

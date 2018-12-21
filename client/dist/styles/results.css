@@ -1,0 +1,53 @@
+.results-container {
+  height: 60%;
+  width: 100%;
+  margin: auto auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.results {
+  box-sizing: border-box;
+  flex-basis: 45%;
+  color: white;
+}
+
+.header {
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.product {
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+}
+
+.br {
+  float: right;
+  padding-right: 5%;
+}
+
+.us {
+  float: left;
+  padding-left: 5%;
+}
+
+.image {
+  display: block;
+  height: 90%;
+  width: 90%;
+}
+
+.price {
+  display: block;
+  height: 5%;
+  width: 100px;
+  padding-left: 25%;
+  padding-top: 5px;
+  font-size: 24px;
+  font-weight: lighter;
+}

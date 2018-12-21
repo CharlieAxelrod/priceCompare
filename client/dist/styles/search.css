@@ -1,11 +1,16 @@
 form {
-  height: 40%;
+  height: 45%;
   width: 60%;
   margin: auto auto;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.main-header {
+  font-size: 40px;
+  color: blanchedalmond;
 }
 
 .query-bar {
